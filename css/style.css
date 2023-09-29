@@ -1,0 +1,52 @@
+header
+{
+    background: linear-gradient(to right, #d8af97, #ff6961, #8466f4, #77dd77);
+    padding: 1%;
+}
+
+h1
+{
+    text-align: center;
+    padding: 1%;
+}
+nav
+{
+    text-align: center;    
+}
+
+.anav
+{
+    margin-inline: 5px;
+    text-decoration: none;
+}
+
+#portada
+{
+    text-align: center;    
+}
+
+#planportada
+{
+    margin-top: 20px;
+    margin-inline: 10px;
+    width: 700px;    
+    border-style:groove;
+    border: 1px solid black;             
+}
+
+#contenedor
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.imgalmacen
+{
+    margin-top: 10px;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid black;
+}
