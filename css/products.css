@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Code+Pro:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+/*Disposicion de cards*/
+
+/*TITLE ALMACEN*/
+main .title{
+    width: 100%;
+    background-color: #fbff0057;
+    text-align: center;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 0px;
+    font-size: 40px;
+}
+/* CONTAINER CARDS*/
+section .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+
+}
+section .card{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 20%;
+    margin: 0 10px;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 2%;
+    font-weight: bold;
+    border-radius: 2%;
+}
+.card .p{
+    font-size: 14px;
+    padding: 8px;
+}
+.card img{
+    max-width:100%;
+    height: 25vh;
+    border-radius: 20px 20px 0px 0px}
+
+.card:hover{
+    transform:scale(1.1);
+}
+
+.boton button{
+    background-color: #a4c735;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+    margin: 5px;
+    cursor: pointer;
+}
