@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Code+Pro:wght@300&display=swap');
 *{
     padding: 0;
     margin: 0;
+    font-family: "Open Sans",sans-serif;
     box-sizing: border-box;
 }
 
 #title {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:rgb(255, 191, 73);
     margin-bottom: 2%;
 }
@@ -30,7 +31,6 @@
 }
 .local p{
     font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     text-align: center;
 }
