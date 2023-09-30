@@ -4,11 +4,103 @@ header
     padding: 1%;
 }
 
-h1
+menu, #menu-check
+{    
+    display: none;
+    place-content: space-between;
+    
+}
+
+header div.contenedor 
+{
+    display: flex;
+    place-content: space-between;   
+    left: 0.5em;
+    top: 0.5em; 
+}
+
+#menu-check:not(:checked) ~ nav{
+    display: none;
+}
+
+#menu-check:checked ~ nav
+{
+    display: block;
+}
+
+#menu
+{
+    display: block;
+    color: #ff6961;
+    background-color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 3px solid #ff6961;
+    border-radius: 0.3em;
+    position: absolute;
+    left: 0.5em;
+    top: 0.5em;
+    z-index: 9999;
+}
+
+#menu:hover
+{
+    color: white;
+    background-color: #ff6961;
+}
+
+#menu-cerrar
+{
+    display: none;
+}
+
+#menu-check:checked ~ label #menu-abrir
+{
+    display: none;
+}
+
+#menu-check:checked ~ label #menu-cerrar
+{
+    display: block;
+}
+
+header div.contenedor nav
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25%;
+    background-color: #8466f4;
+    padding-top: 0.5em;
+    padding-right: 1.5em;
+    opacity: 0.8;
+    color: white;
+    font-size: 1.5em;
+}
+
+header div.contenedor nav a
+{
+    color: white;
+    background-color: none;
+}
+
+header div.contenedor nav a
+{
+    display: block;
+    text-align: right;
+}
+
+main
 {
     text-align: center;
-    padding: 1%;
 }
+
+h1 
+{   
+   text-align: center;
+}
+
 nav
 {
     text-align: center;    
