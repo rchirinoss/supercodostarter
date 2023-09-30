@@ -59,7 +59,9 @@ section .card{
 .card:hover{
     transform:scale(1.1);
 }
-
+.boton{
+    width: 100%;
+}
 .boton button{
     background-color: #a4c735;
     padding: 10px;
@@ -67,7 +69,7 @@ section .card{
     border-radius: 6px;
     color: #fff;
     font-weight: 700;
-    width: 100%;
+    width: 100% ;
     margin: 5px;
     cursor: pointer;
 }
