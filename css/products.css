@@ -16,13 +16,26 @@ main{
 /*TITLE ALMACEN*/
 main .title{
     width: 100%;
-    background-color: #fbff0057;
     text-align: center;
     border-radius: 10px;
     margin-bottom: 15px;
     padding: 0px;
     font-size: 40px;
 }
+#limpieza{
+    background-color: #84b6f4;
+}
+
+#almacen{
+    background-color: #fbff0057;
+}
+#bebidas{
+    background-color: #ff6961;
+}
+#verduleria{
+    background-color: #77dd77;
+}
+
 /* CONTAINER CARDS*/
 section .container{
     width: 100%;
