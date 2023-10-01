@@ -29,7 +29,7 @@ header div.contenedor
 }
 
 #menu
-{
+{    
     display: block;
     color: #ff6961;
     background-color: white;
@@ -121,9 +121,12 @@ nav
 {
     margin-top: 20px;
     margin-inline: 10px;
-    width: 700px;    
+    width: 600px;    
     border-style:groove;
-    border: 1px solid black;             
+    border: 1px solid black; 
+    place-content: space-between;
+    align-items: center;
+    justify-content: center;            
 }
 
 #contenedor
