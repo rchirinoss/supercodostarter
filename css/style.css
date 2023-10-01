@@ -60,11 +60,11 @@ header div.contenedor
 #menu
 {    
     display: block;
-    color: #ff6961;
+    color: #5271FF;
     background-color: white;
     font-size: 1.2em;
     font-weight: bold;
-    border: 3px solid #ff6961;
+    border: 3px solid #5271FF;
     border-radius: 0.3em;
     position: absolute;
     left: 0.5em;
@@ -76,7 +76,8 @@ header div.contenedor
 #menu:hover
 {
     color: white;
-    background-color: #ff6961;
+    background-color: #5271FF;
+    border: 3px solid white;
 }
 
 #menu-cerrar
@@ -125,6 +126,18 @@ header div.contenedor nav a
     display: block;
     text-align: left;
 }
+
+form
+    {
+        padding: 50px 30px;
+        width: 70%;
+    }
+
+    form input
+    {
+        padding: 15px;
+    }
+
 }
 
 nav
@@ -249,3 +262,95 @@ h1
     cursor: pointer;
     font-size: 35px;
 }
+
+/* Formulario */
+
+.formulario
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form
+{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px #5271FF;
+}
+
+.input-group
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form h2
+{
+    color: #5271FF;
+    font-size: 35px;
+}
+
+form label
+{
+    color: #5271FF;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+form input, textarea
+{
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    background-color: #EDFFF0;
+    border: 2px solid #5271FF;
+    color: #5271FF;
+    outline: none;
+}
+
+form input::placeholder, textarea::placeholder
+{
+    color: #5271FF;
+    opacity: .7;
+}
+
+form .form-txt
+{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+form .form-txt a
+{
+    color: #5271FF;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+form .btn
+{
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-radius: 25px;
+    background-color: #5271FF;
+    box-shadow: 0 0 20px #5271FF;
+    cursor: pointer;
+}
+
+/*form .btn:hover
+{
+    background-color: white;
+    color: #5271FF;    
+}*/
