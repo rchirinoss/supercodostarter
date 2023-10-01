@@ -11,9 +11,19 @@ header
     /*background: linear-gradient(to right, #d8af97, #ff6961, #8466f4, #77dd77);;*/
     background-color: #5271FF;
     padding: 1%;
-    height: 8rem;
+    height: ;
     
 }
+
+.logo{ 
+    width: 15%;
+    padding: 0;
+}
+.logo img{
+    max-width: 80%;
+
+}
+
 
 menu, #menu-check
 {    
