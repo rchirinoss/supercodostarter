@@ -5,16 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Codo</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/products.css">
 </head>
 <body>
     <header>
         <h1>Super Codo</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="productos.html">Productos</a>
-            <a href="sucursales.html">Sucursales</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+        <div class="contenedor">
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="productos.html">Productos</a>
+                        <ul class="dropdown">
+                            <li><a href="almacen.html">Almacen</a></li>
+                            <li><a href="bebidas.html">Bebidas</a></li>
+                            <li><a href="limpieza.html">Limpieza</a></li>
+                            <li><a href="frutasyverduras.html">Frutas y Verduras</a></li>
+                        </ul>
+                    </li>
+                        <li><a href="sucursales.html">Sucursales</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section>
@@ -33,7 +52,16 @@
             </div>
             <div>
                 <img class="card" src="./images/almacen/05 lentejas egran.webp" alt="">
-            </div>            
+            </div>
+            <div>
+                <img class="card" src="./images/almacen/garbanzo egran.webp" alt="">
+            </div> 
+            <div>
+                <img class="card" src="./images/almacen/soja.webp" alt="">
+            </div> 
+            <div>
+                <img class="card" src="./images/almacen/trigoBurgol.webp" alt="">
+            </div>             
             <div>
                 <img class="card" src="./images/limpieza/01 detergente.webp" alt="detergente">
             </div>
