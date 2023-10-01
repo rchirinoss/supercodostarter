@@ -172,6 +172,7 @@ ul li:hover ul.dropdown
 {
     display: block;
     background-color: #5271FF;
+    border-radius: 5%;    
 }
 
 main
