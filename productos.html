@@ -5,106 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Codo</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/products.css">
 </head>
 <body>
     <header>
         <h1>Super Codo</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="productos.html">Productos</a>
-            <a href="sucursales.html">Sucursales</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+        <div class="contenedor">
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="productos.html">Productos</a>
+                        <ul class="dropdown">
+                            <li><a href="almacen.html">Almacen</a></li>
+                            <li><a href="bebidas.html">Bebidas</a></li>
+                            <li><a href="limpieza.html">Limpieza</a></li>
+                            <li><a href="frutasyverduras.html">Frutas y Verduras</a></li>
+                        </ul>
+                    </li>
+                        <li><a href="sucursales.html">Sucursales</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section>
-        <div id="contenedor">
-            <div>
-                <img class="card" src="./images/almacen/01 lenteja la española.webp" alt="">
+        <div class="container">
+            <div class="card">
+                <img src="./images/almacen/01 lenteja la española.webp" alt="">
             </div>
-            <div>
-                <img class="card" src="./images/almacen/02 arroz primor.webp" alt="">
+            <div class="card">
+                <img src="./images/almacen/02 arroz primor.webp" alt="">
             </div>
-            <div>
-                <img class="card" src="./images/almacen/03 arroz gallo fino.webp" alt="">
+            <div class="card">
+                <img src="./images/almacen/03 arroz gallo fino.webp" alt="">
             </div>
-            <div>
-                <img class="card" src="./images/almacen/04 arroz dos hermanos.webp" alt="">
+            <div class="card">
+                <img src="./images/almacen/04 arroz dos hermanos.webp" alt="">
             </div>
-            <div>
-                <img class="card" src="./images/almacen/05 lentejas egran.webp" alt="">
-            </div>            
-            <div>
-                <img class="card" src="./images/limpieza/01 detergente.webp" alt="detergente">
+            <div class="card">
+                <img src="./images/almacen/05 lentejas egran.webp" alt="">
             </div>
-            <div>
-                <img class="card" src="./images/limpieza/02 lavandina.png" alt="lavandina">
+            <div class="card">
+                <img src="./images/almacen/garbanzo egran.webp" alt="">
+            </div> 
+            <div class="card">
+                <img src="./images/almacen/soja.webp" alt="">
+            </div> 
+            <div class="card">
+                <img src="./images/almacen/trigoBurgol.webp" alt="">
+            </div>             
+            <div class="card">
+                <img src="./images/limpieza/01 detergente.webp" alt="detergente">
             </div>
-            <div>
-                <img class="card" src="./images/limpieza/03 esponja.webp" alt="esponja">
+            <div class="card">
+                <img src="./images/limpieza/02 lavandina.png" alt="lavandina">
             </div>
-            <div>
-                <img class="card" src="./images/limpieza/04 rejilla.webp" alt="rejilla">
+            <div class="card">
+                <img src="./images/limpieza/03 esponja.webp" alt="esponja">
             </div>
-            <div>
-                <img class="card" src="./images/limpieza/05 skip.webp" alt="skip">
+            <div class="card">
+                <img src="./images/limpieza/04 rejilla.webp" alt="rejilla">
+            </div>
+            <div class="card">
+                <img src="./images/limpieza/05 skip.webp" alt="skip">
             </div>    
-            <div>
-                <img class="card" src="./images/limpieza/06 vivere.webp" alt="vivere">
+            <div class="card">
+                <img src="./images/limpieza/06 vivere.webp" alt="vivere">
             </div>
-            <div>
-                <img class="card" src="./images/limpieza/07 escoba.png" alt="escoba">
+            <div class="card">
+                <img src="./images/limpieza/07 escoba.png" alt="escoba">
             </div>
-            <div>
-                <img class="card" src="./images/limpieza/08 trapo.webp" alt="trapo">
+            <div class="card">
+                <img src="./images/limpieza/08 trapo.webp" alt="trapo">
             </div>        
-            <div>
-                <img class="card" src="./images/frutasyverduras/01 zanahoria.webp" alt="zanahoria">
+            <div class="card">
+                <img src="./images/frutasyverduras/01 zanahoria.webp" alt="zanahoria">
             </div>
-            <div>
-                <img class="card" src="./images/frutasyverduras/02 papa.webp" alt="papa">
+            <div class="card">
+                <img src="./images/frutasyverduras/02 papa.webp" alt="papa">
             </div>
-            <div>
-                <img class="card" src="./images/frutasyverduras/03 pimiento.webp" alt="pimiento">
+            <div class="card">
+                <img src="./images/frutasyverduras/03 pimiento.webp" alt="pimiento">
             </div>
-            <div>
-                <img class="card" src="./images/frutasyverduras/04 lechuga.webp" alt="lechuga">
+            <div class="card">
+                <img src="./images/frutasyverduras/04 lechuga.webp" alt="lechuga">
             </div>
-            <div>
-                <img class="card" src="./images/frutasyverduras/05 manzana.webp" alt="manzana">
+            <div class="card">
+                <img src="./images/frutasyverduras/05 manzana.webp" alt="manzana">
             </div>    
-            <div>
-                <img class="card" src="./images/frutasyverduras/06 banana.webp" alt="banana">
+            <div class="card">
+                <img src="./images/frutasyverduras/06 banana.webp" alt="banana">
             </div>
-            <div>
-                <img class="card" src="./images/frutasyverduras/07 uva.webp" alt="uva">
+            <div class="card">
+                <img src="./images/frutasyverduras/07 uva.webp" alt="uva">
             </div>
-            <div>
-                <img class="card" src="./images/frutasyverduras/08 naranja.png" alt="naranja">
+            <div class="card">
+                <img src="./images/frutasyverduras/08 naranja.png" alt="naranja">
             </div> 
-            <div>
-                <img class="card" src="./images/bebidas/01aguaGlaciar2l.webp" alt="Agua mineral Glaciar">
+            <div class="card">
+                <img src="./images/bebidas/01aguaGlaciar2l.webp" alt="Agua mineral Glaciar">
             </div>  
-            <div>
-                <img class="card" src="./images/bebidas/02aguaMineral-EcodelosAndes2L.webp" alt="Agua mineral Eco">
+            <div class="card">
+                <img src="./images/bebidas/02aguaMineral-EcodelosAndes2L.webp" alt="Agua mineral Eco">
             </div>  
-            <div>
-                <img class="card" src="./images/bebidas/03aguaMineralVillavicencio2L.webp" alt="Agua mineral Villavicencio">
+            <div class="card">
+                <img src="./images/bebidas/03aguaMineralVillavicencio2L.webp" alt="Agua mineral Villavicencio">
             </div>  
-            <div>
-                <img class="card" src="./images/bebidas/04aguaMineralNestle2,25L.webp" alt="Agua Mineral Nestle">
+            <div class="card">
+                <img src="./images/bebidas/04aguaMineralNestle2,25L.webp" alt="Agua Mineral Nestle">
             </div> 
-            <div>
-                <img class="card" src="./images/bebidas/05gaseosaCocaCola2,25L.webp" alt="Coca-cola">
+            <div class="card">
+                <img src="./images/bebidas/05gaseosaCocaCola2,25L.webp" alt="Coca-cola">
             </div>
-            <div>
-                <img class="card" src="./images/bebidas/06gaseosaSprite0,25L.webp" alt="Sprite">
+            <div class="card">
+                <img src="./images/bebidas/06gaseosaSprite0,25L.webp" alt="Sprite">
             </div>
-            <div>
-                <img class="card" src="./images/bebidas/07gaseosaFantaNaranja2,25L.webp" alt="Fanta naranja">
+            <div class="card">
+                <img src="./images/bebidas/07gaseosaFantaNaranja2,25L.webp" alt="Fanta naranja">
             </div>
-            <div>
-                <img class="card" src="./images/bebidas/08gaseosaCunnington-cola2,25L.webp" alt="Cunnington-cola">
+            <div class="card">
+                <img src="./images/bebidas/08gaseosaCunnington-cola2,25L.webp" alt="Cunnington-cola">
             </div>
         </div>
     </section>
