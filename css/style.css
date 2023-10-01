@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 header
 {
     background: linear-gradient(to right, #d8af97, #ff6961, #8466f4, #77dd77);;
@@ -7,10 +12,22 @@ header
 menu, #menu-check
 {    
     display: none;
-    place-content: space-between;
-    
+    place-content: space-between;    
 }
 
+#menu-cerrar
+{
+    display: none;
+}
+
+#menu-abrir
+{
+    display: none;
+}
+
+/* Navegador para Celulares */
+@media screen and (max-width: 550px)
+{
 header div.contenedor 
 {
     display: flex;
@@ -41,6 +58,7 @@ header div.contenedor
     left: 0.5em;
     top: 0.5em;
     z-index: 9999;
+    cursor: pointer;
 }
 
 #menu:hover
@@ -52,6 +70,11 @@ header div.contenedor
 #menu-cerrar
 {
     display: none;
+}
+
+#menu-abrir
+{
+    display:block;
 }
 
 #menu-check:checked ~ label #menu-abrir
@@ -70,25 +93,71 @@ header div.contenedor nav
     top: 0;
     left: 0;
     height: 100%;
-    width: 25%;
+    width: 40%;
     background-color: #8466f4;
     padding-top: 0.5em;
     padding-right: 1.5em;
     opacity: 0.8;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.5em;    
 }
 
 header div.contenedor nav a
 {
     color: white;
-    background-color: none;
+    background-color: none;    
 }
 
 header div.contenedor nav a
 {
     display: block;
-    text-align: right;
+    text-align: left;
+}
+}
+
+nav
+{
+    text-align: center;
+}
+
+ul
+{
+    list-style: none;
+}
+
+ul li
+{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a
+{
+    display: block;
+    padding: 20px 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li
+{
+    display: block; 
+}
+
+ul li ul.dropdown
+{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li:hover ul.dropdown
+{
+    display: block;
+    background-color: #8466f4;
 }
 
 main
@@ -101,17 +170,6 @@ h1
    text-align: center;
 }
 
-nav
-{
-    text-align: center;    
-}
-
-.anav
-{
-    margin-inline: 5px;
-    text-decoration: none;
-}
-
 #portada
 {
     text-align: center;    
@@ -121,13 +179,19 @@ nav
 {
     margin-top: 30px;
     margin-inline: 40px;
-    width: 600px;    
+    width: 400px;    
     border-style:groove;
-    border: 1px solid black; 
+    border: 1px solid white; 
+    border-radius: 15px;
     place-content: space-between;
     align-items: center;
     justify-content: center;            
 }
+
+/*#planportada:hover{
+    transform:scale(1.1);
+    transition-delay: 0.2s;
+}*/
 
 #contenedor
 {
