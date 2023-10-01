@@ -3,6 +3,8 @@ header
     /*background: linear-gradient(to right, #d8af97, #ff6961, #8466f4, #77dd77);;*/
     background-color: #5271FF;
     padding: 1%;
+    height: 8rem;
+    
 }
 
 h1
@@ -14,11 +16,11 @@ h1
 
 .logo{ 
     width: 15%;
-    margin: 1%;
     padding: 0;
 }
 .logo img{
     max-width: 80%;
+    height: 5rem;
 }
 
 nav{
