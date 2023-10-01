@@ -1,12 +1,24 @@
+
 *{
-    padding: 0;
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 header
 {
-    background: linear-gradient(to right, #d8af97, #ff6961, #8466f4, #77dd77);;
+    /*background: linear-gradient(to right, #d8af97, #ff6961, #8466f4, #77dd77);*/
+    background-color: #5271FF;
     padding: 1%;
+}
+
+.logo{ 
+    width: 15%;
+    padding: 0;
+}
+.logo img{
+    max-width: 80%;
+
 }
 
 menu, #menu-check
@@ -157,7 +169,8 @@ ul li ul.dropdown
 ul li:hover ul.dropdown
 {
     display: block;
-    background-color: #8466f4;
+    background-color: #5271FF;
+    border-radius: 5%;    
 }
 
 main
@@ -188,10 +201,9 @@ h1
     justify-content: center;            
 }
 
-/*#planportada:hover{
+#planportada:hover{
     transform:scale(1.1);
-    transition-delay: 0.2s;
-}*/
+}
 
 #contenedor
 {
