@@ -37,7 +37,9 @@
     font-weight: 600;
     text-align: center;
 }
-
+.local iframe{
+    max-width: 100%;
+}
 @media (max-width:720px){
     .sucursales{
         width: 100%;
