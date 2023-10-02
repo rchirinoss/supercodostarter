@@ -11,6 +11,11 @@ header
     padding: 1%;
 }
 
+header .hover:hover{
+    background-color: #fff;
+    color: #5271FF;
+}
+
 .logo{ 
     width: 15%;
     padding: 0;
