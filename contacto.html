@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Codo</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img  src="./images/Logo.titulo.png" alt="Logo" ></a>
+        </div>
+        <div class="contenedor">
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="productos.html">Productos</a>
+                        <ul class="dropdown">
+                            <li><a href="almacen.html">Almacen</a></li>
+                            <li><a href="bebidas.html">Bebidas</a></li>
+                            <li><a href="limpieza.html">Limpieza</a></li>
+                            <li><a href="frutasyverduras.html">Frutas y Verduras</a></li>
+                        </ul>
+                    </li>
+                        <li><a href="sucursales.html">Sucursales</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="formulario">            
+            <form action="https://formsubmit.co/rchirinos@live.com.ar" method="POST">
+                <h2>Contacto</h2>
+                <div class="input-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+
+                    <label for="phone">Telefono</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Telefono">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+                    <!-- <div class="form-txt">
+                        <a href="#">Politicas de privacidad</a>
+                        <a href="#">Terminos y condiciones</a>
+                    </div> -->
+
+                    <input class="btn" type="submit" value="Enviar">
+
+                    <input type="hidden" name="_next" value="https://rchirinoss.github.io/SuperCodo/contacto.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>    
+</body>
+</html>

@@ -1,23 +1,201 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 header
 {
-    background: linear-gradient(to right, #d8af97, #ff6961, #8466f4, #77dd77);
+    /*background: linear-gradient(to right, #d8af97, #ff6961, #8466f4, #77dd77);*/
+    background-color: #5271FF;
     padding: 1%;
 }
 
-h1
-{
-    text-align: center;
-    padding: 1%;
+header .hover:hover{
+    background-color: #ffffff4d;
+    
 }
+
+.logo{ 
+    width: 15%;
+    padding: 0;
+}
+.logo img{
+    max-width: 80%;
+
+}
+
+menu, #menu-check
+{    
+    display: none;
+    place-content: space-between;    
+}
+
+#menu-cerrar
+{
+    display: none;
+}
+
+#menu-abrir
+{
+    display: none;
+}
+
+/* Navegador para Celulares */
+@media screen and (max-width: 550px)
+{
+header div.contenedor 
+{
+    display: flex;
+    place-content: space-between;   
+    left: 0.5em;
+    top: 0.5em; 
+}
+
+#menu-check:not(:checked) ~ nav{
+    display: none;
+}
+
+#menu-check:checked ~ nav
+{
+    display: block;
+}
+
+#menu
+{    
+    display: block;
+    color: #ff6961;
+    background-color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 3px solid #ff6961;
+    border-radius: 0.3em;
+    position: absolute;
+    left: 0.5em;
+    top: 0.5em;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+#menu:hover
+{
+    color: white;
+    background-color: #ff6961;
+}
+
+#menu-cerrar
+{
+    display: none;
+}
+
+#menu-abrir
+{
+    display:block;
+}
+
+#menu-check:checked ~ label #menu-abrir
+{
+    display: none;
+}
+
+#menu-check:checked ~ label #menu-cerrar
+{
+    display: block;
+}
+
+header div.contenedor nav
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    background-color: #8466f4;
+    padding-top: 0.5em;
+    padding-right: 1.5em;
+    opacity: 0.8;
+    color: white;
+    font-size: 1.5em;    
+}
+
+header div.contenedor nav a
+{
+    color: white;
+    background-color: none;    
+}
+
+header div.contenedor nav a
+{
+    display: block;
+    text-align: left;
+}
+
+form
+    {
+        padding: 50px 30px;
+        width: 70%;
+    }
+
+    form input
+    {
+        padding: 15px;
+    }
+}
+
 nav
 {
-    text-align: center;    
+    text-align: center;
 }
 
-.anav
+ul
 {
-    margin-inline: 5px;
+    list-style: none;
+}
+
+ul li
+{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a
+{
+    display: block;
+    padding: 20px 25px;
+    color: white;
     text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li
+{
+    display: block; 
+}
+
+ul li ul.dropdown
+{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li:hover ul.dropdown
+{
+    display: block;
+    background-color: #5271FF;
+    border-radius: 5%;    
+}
+
+main
+{
+    text-align: center;
+}
+
+h1 
+{   
+   text-align: center;
 }
 
 #portada
@@ -27,11 +205,19 @@ nav
 
 #planportada
 {
-    margin-top: 20px;
-    margin-inline: 10px;
-    width: 700px;    
+    margin-top: 30px;
+    margin-inline: 40px;
+    width: 400px;    
     border-style:groove;
-    border: 1px solid black;             
+    border: 1px solid white; 
+    border-radius: 15px;
+    place-content: space-between;
+    align-items: center;
+    justify-content: center;            
+}
+
+#planportada:hover{
+    transform:scale(1.1);
 }
 
 #contenedor
@@ -49,4 +235,32 @@ nav
     width: 200px;
     padding: 5px;
     border: 1px solid black;
+}
+
+/*STYLE ICONO WPP*/
+.icono{
+    z-index: 20;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+}
+
+.icono button{
+    height: 50px;
+    width: 50px;
+    background-color: #27cd40;
+    border-radius: 100% ;
+    border: solid #27cd40;
+}
+.icono button :hover{
+    cursor: pointer;
+}
+.icono button i{
+    color: white;
+    font-size: 30px;
+}
+
+.icono button i:hover{
+    cursor: pointer;
+    font-size: 35px;
 }
