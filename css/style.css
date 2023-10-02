@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@700 & display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -165,7 +167,9 @@ ul li a
     color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 ul li ul.dropdown li
