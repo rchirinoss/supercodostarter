@@ -369,7 +369,8 @@ footer
 {
     width: 30px;
     display: inline;
-    margin-inline: 10px;       
+    margin-inline: 10px;    
+    cursor: pointer;   
 }
 
 .logofoot .parrafo
