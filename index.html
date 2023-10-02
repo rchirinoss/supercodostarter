@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/Icono.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/carrousel.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><img  src="./images/Logo.titulo.png" alt="Logo" ></a>
-        </div>
         <div class="contenedor">
             <input type="checkbox" id="menu-check">
             <label id="menu" for="menu-check">
                 <span id="menu-abrir">&#9776;</span>
                 <span id="menu-cerrar">X</span>
-            </label>            
+            </label>
+            <div class="logo">
+                <a href="index.html"><img  src="./images/Logo.titulo.png" alt="Logo" ></a>
+            </div>            
             <nav>
                 <ul>
                     <li><a class="hover" href="index.html">Home</a></li>
@@ -34,7 +35,14 @@
                         <li><a class="hover" href="sucursales.html">Sucursales</a></li>
                         <li><a class="hover" href="contacto.html">Contacto</a></li>
                 </ul>
+                <!--<div class="buscar">
+                    <input type="text" placeholder="Buscar" required>
+                    <div class="btn">
+                        <i class="fas fa-search icon"></i>
+                    </div>
+                </div>-->
             </nav>
+            
         </div>     
     </header>
     <main>
@@ -49,6 +57,14 @@
                 <a href="./frutasyverduras.html"><img id="planportada" src="./images/Selector verduleria.webp" alt="verduleria"></a>
             </div>
         </section>
+        <div class="carrousel">
+            <ul>
+                <li><img src="images/carrousel/01 dto bco nacion.png" alt=""></li>
+                <li><img src="images/carrousel/02 dto bco macro.png" alt=""></li>
+                <li><img src="images/carrousel/03 dto bco credicoop.png" alt=""></li>
+                <li><img src="images/carrousel/04 dto bco hipotecario.png" alt=""></li>
+            </ul>
+        </div>
         <div class="icono">
             <a href="https://www.whatsapp.com/" target="_blank"><button><i class="fa-brands fa-whatsapp"></i></button></a>
         </div>        
