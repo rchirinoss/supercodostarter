@@ -196,13 +196,15 @@ h1
 
 #portada
 {
-    text-align: center;    
+    text-align: center;
+    margin: 20px 20px;
+    ;    
 }
 
 #planportada
-{
-    margin-top: 30px;
-    margin-inline: 40px;
+{    
+    margin-inline: 10px;
+    margin-block: 10px;    
     width: 400px;    
     border-style:groove;
     border: 1px solid white; 
@@ -277,8 +279,8 @@ form
     border-radius: 20px;
     text-align: center;
     width: 340px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     box-shadow: 0 0 20px #5271FF;
 }
 
@@ -352,3 +354,25 @@ form .btn
     background-color: white;
     color: #5271FF;    
 }*/
+
+footer
+{
+    /*background: linear-gradient(to right, #d8af97, #ff6961, #8466f4, #77dd77);*/
+    background-color: #5271FF;
+    padding: 1%;
+    text-align: center; 
+}
+
+.logofoot img
+{
+    width: 30px;
+    display: inline;
+    margin-inline: 10px;       
+}
+
+.logofoot .parrafo
+{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
