@@ -43,7 +43,7 @@ menu, #menu-check
 
 /* Navegador para Celulares */
 @media screen and (max-width: 550px)
-{
+{    
 header div.contenedor 
 {
     display: flex;
@@ -198,27 +198,25 @@ h1
    text-align: center;
 }
 
-#portada
+section #portada
 {
     text-align: center;
     margin: 20px 20px;
-    ;    
+    width: 100%;           
 }
 
-#planportada
+
+section #item
 {    
     margin-inline: 10px;
     margin-block: 10px;    
-    width: 400px;    
+    width: 45%;    
     border-style:groove;
     border: 1px solid white; 
-    border-radius: 15px;
-    place-content: space-between;
-    align-items: center;
-    justify-content: center;            
+    border-radius: 15px; 
 }
 
-#planportada:hover{
+section #item:hover{
     transform:scale(1.1);
 }
 
@@ -358,6 +356,8 @@ form .btn
     color: #5271FF;    
 }*/
 
+
+/* Footer */
 footer
 {    
     background-color: #5271FF;
