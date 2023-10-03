@@ -229,7 +229,7 @@ main #item
     border-radius: 15px; 
 }
 
-section #item:hover{
+main #item:hover{
     transform:scale(1.1);
 }
 
