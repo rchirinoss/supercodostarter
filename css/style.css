@@ -211,7 +211,7 @@ h1
    text-align: center;
 }
 
-main #portada
+section #portada
 {
     text-align: center;
     margin: 20px 20px;
@@ -219,7 +219,7 @@ main #portada
 }
 
 
-main #item
+section #item
 {    
     margin-inline: 10px;
     margin-block: 10px;    
@@ -229,16 +229,17 @@ main #item
     border-radius: 15px; 
 }
 
-main #item:hover{
+section #item:hover{
     transform:scale(1.1);
 }
 
-main #contenedor
-{
-    width: 100%;
+#contenedor
+{    
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;    
 }
 
 .card
