@@ -114,28 +114,28 @@ header div.contenedor
     display: block;
 }
 
-header div.contenedor nav
+header div.content nav
 {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 40%;
-    background-color: #8466f4;
+    width: 35%;
+    background-color: #5271FF;
     padding-top: 0.5em;
     padding-right: 1.5em;
-    opacity: 0.8;
+    opacity: .8;
     color: white;
-    font-size: 1.5em;    
+    font-size: 1.5em;
 }
 
-header div.contenedor nav a
+header div.content nav a
 {
     color: white;
     background-color: none;    
 }
 
-header div.contenedor nav a
+header div.content nav a
 {
     display: block;
     text-align: left;
@@ -233,13 +233,12 @@ section #item:hover{
     transform:scale(1.1);
 }
 
-#contenedor
+main #contenedor
 {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
+    flex-wrap: wrap;    
 }
 
 .card
