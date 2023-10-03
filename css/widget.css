@@ -1,0 +1,54 @@
+.contenedor-w {
+    width: 90%;
+    max-width: 1000px;
+    margin: 15px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:  "widget-1 widget-2 widget-3";
+}
+
+.contenedor-w>div,
+.contenedor-w .footer {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* aca le doy estilo a la widget */
+.contenedor-w .widget-1,
+.contenedor-w .widget-2,
+.contenedor-w .widget-3 {
+	background: ffff;
+	color:black;
+	height: auto;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;  
+    padding: 1rem;
+    border: 2px solid ;
+}
+.tit-widget{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.widget-link {
+    font-size: 12px;
+    text-align: auto;
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor .widget-1 {
+	grid-area: widget-1;
+}
+.contenedor .widget-2 {
+	grid-area: widget-2;
+}
+.contenedor .widget-3 {
+	grid-area: widget-3;
+}
+

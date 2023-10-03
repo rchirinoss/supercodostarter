@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@700 & display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -44,12 +46,27 @@ menu, #menu-check
 /* Navegador para Celulares */
 @media screen and (max-width: 550px)
 {
+.contenedor #item
+{
+    width: 85%;
+    flex-direction: column; 
+}
+    
 header div.contenedor 
 {
     display: flex;
     place-content: space-between;   
     left: 0.5em;
     top: 0.5em; 
+}
+
+.logo{
+    width: 15%;
+    margin-left: 80%;
+}
+.logo img{
+    max-width: 100%;
+    
 }
 
 #menu-check:not(:checked) ~ nav{
@@ -64,11 +81,11 @@ header div.contenedor
 #menu
 {    
     display: block;
-    color: #ff6961;
-    background-color: white;
+    color: #fff;
+    background-color: #5271FF;
     font-size: 1.2em;
     font-weight: bold;
-    border: 3px solid #ff6961;
+    border: 3px solid #fff;
     border-radius: 0.3em;
     position: absolute;
     left: 0.5em;
@@ -80,7 +97,7 @@ header div.contenedor
 #menu:hover
 {
     color: white;
-    background-color: #ff6961;
+    background-color:  #5271FF;
 }
 
 #menu-cerrar
@@ -103,28 +120,28 @@ header div.contenedor
     display: block;
 }
 
-header div.contenedor nav
+header div.content nav
 {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 40%;
-    background-color: #8466f4;
+    width: 35%;
+    background-color: #5271FF;
     padding-top: 0.5em;
     padding-right: 1.5em;
-    opacity: 0.8;
+    opacity: .8;
     color: white;
-    font-size: 1.5em;    
+    font-size: 1.5em;
 }
 
-header div.contenedor nav a
+header div.content nav a
 {
     color: white;
     background-color: none;    
 }
 
-header div.contenedor nav a
+header div.content nav a
 {
     display: block;
     text-align: left;
@@ -165,7 +182,9 @@ ul li a
     color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 ul li ul.dropdown li
@@ -198,36 +217,34 @@ h1
    text-align: center;
 }
 
-#portada
+main .contenedor #portada
 {
     text-align: center;
-    margin: 20px 20px;    ;    
+    margin: 20px 20px;
+    width: 100%;           
 }
 
-#planportada
+
+main .contenedor #item
 {    
     margin-inline: 10px;
     margin-block: 10px;    
-    width: 400px;    
+    width: 45%;    
     border-style:groove;
     border: 1px solid white; 
-    border-radius: 15px;
-    place-content: space-between;
-    align-items: center;
-    justify-content: center;            
+    border-radius: 15px; 
 }
 
-#planportada:hover{
+main .contenedor #item:hover{
     transform:scale(1.1);
 }
 
-#contenedor
+main #contenedor
 {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
+    flex-wrap: wrap;    
 }
 
 .card
@@ -357,7 +374,9 @@ form .btn
     color: #5271FF;    
 }*/
 
-footer
+
+/* Footer */
+/* footer
 {    
     background-color: #5271FF;
     padding: 1%;
@@ -368,7 +387,8 @@ footer
 {
     width: 30px;
     display: inline;
-    margin-inline: 10px;       
+    margin-inline: 10px;    
+    cursor: pointer;   
 }
 
 .logofoot .parrafo
@@ -376,4 +396,4 @@ footer
     font-size: 20px;
     color: white;
     margin-bottom: 15px;
-}
+} */

@@ -1,0 +1,148 @@
+.contenedorf {
+    width: 100%;
+    /* max-width: 1000px;  */
+    margin: 15px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:  "footer footer footer footer";
+}
+
+.contenedorf>div,
+.contenedorf .footer {
+    background: #fff;
+    padding: 20px;
+    /* border-radius: 4px; */
+    text-align: center; 
+}
+.logofoot img{
+    width: 30px;
+    display: inline;
+    margin-inline: 10px;    
+    cursor: pointer;   
+}
+
+.logofoot h3{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+.contenedorf .footer {
+    background-color: #5271FF;
+    color: white;
+    grid-area: footer;
+    text-decoration: none;
+}
+
+.footer .logofoot {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.logofoot h3 {
+    color: white;
+    text-decoration: none;
+}
+
+.logofoot .footer-phone-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logofoot .footer-list-title {
+    font-weight: 500;
+    color: #444;
+    pointer-events: none;
+}
+
+ .logofoot .footer-contact{
+    color:#fff;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight:bold;  
+    vertical-align: baseline; 
+} 
+.footer .footer-grid{
+    display: grid;
+    width: 100%;
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "list1 list2 list3 list4"
+                         
+}
+.footer-grid .footer-contact{
+    color:#fff;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 12px;
+    vertical-align: baseline; 
+}
+
+.footer .title-li{
+    font-size: 18px;
+    text-align: center;
+    list-style: none;
+
+}
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    
+}
+.footer ul li{
+    font-size: 12px; 
+    cursor: pointer ;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; 
+    margin: 0.2rem;   
+}
+
+.footer ul li a{
+    font-size: 12px; 
+    cursor: pointer ;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    margin: 0.2rem;   
+    
+}
+.footer .list1{
+    grid-area: list1;
+}
+.footer .list2{
+    grid-area: list2;
+}
+.footer .list3{
+    grid-area: list3;
+}
+.footer .list4{
+    grid-area: list4;
+}
+
+.footer p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+    text-align: center;
+}
+
+
+
+
+
+
