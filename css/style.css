@@ -114,7 +114,7 @@ header div.contenedor
     display: block;
 }
 
-header div.content nav
+header div.contenedor nav
 {
     position: absolute;
     top: 0;
@@ -129,13 +129,13 @@ header div.content nav
     font-size: 1.5em;
 }
 
-header div.content nav a
+header div.contenedor nav a
 {
     color: white;
     background-color: none;    
 }
 
-header div.content nav a
+header div.contenedor nav a
 {
     display: block;
     text-align: left;
@@ -211,7 +211,7 @@ h1
    text-align: center;
 }
 
-section #portada
+main #portada
 {
     text-align: center;
     margin: 20px 20px;
@@ -219,11 +219,11 @@ section #portada
 }
 
 
-section #item
+main #item
 {    
     margin-inline: 10px;
     margin-block: 10px;    
-    width: 35%;    
+    width: 45%;    
     border-style:groove;
     border: 1px solid white; 
     border-radius: 15px; 
