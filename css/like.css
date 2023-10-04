@@ -1,0 +1,15 @@
+.like_btn{
+    padding: 10px 15px;
+    background:#0080ff;
+    font-size: 18px;
+    border-radius: 10px;
+    color:#fff;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    transition: 1s ease;
+}
+.like_btn:hover{
+    background: #0074e0;
+    border:solid 3px #84c2ff;
+}

@@ -24,7 +24,8 @@ header .hover:hover{
 }
 .logo img{
     max-width: 80%;
-
+    animation: slideInLeft;
+    animation-duration: 3s;
 }
 
 menu, #menu-check
