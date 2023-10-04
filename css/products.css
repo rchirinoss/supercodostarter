@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Code+Pro:wght@300&display=swap');
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -42,14 +41,15 @@ section .container{
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-
+    margin-top: 20px;
+    margin-bottom: 20px;   
 }
 section .card{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     width: 20%;
-    margin: 5px 10px;
+    margin: 10px 10px;
     gap: 8px;
     align-items: center;
     justify-content: center;

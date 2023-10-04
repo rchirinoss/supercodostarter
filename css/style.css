@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@700 & display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -43,13 +45,22 @@ menu, #menu-check
 
 /* Navegador para Celulares */
 @media screen and (max-width: 550px)
-{
+{    
 header div.contenedor 
 {
     display: flex;
     place-content: space-between;   
     left: 0.5em;
     top: 0.5em; 
+}
+
+.logo{
+    width: 15%;
+    margin-left: 80%;
+}
+.logo img{
+    max-width: 100%;
+    
 }
 
 #menu-check:not(:checked) ~ nav{
@@ -64,11 +75,11 @@ header div.contenedor
 #menu
 {    
     display: block;
-    color: #ff6961;
-    background-color: white;
+    color: #fff;
+    background-color: #5271FF;
     font-size: 1.2em;
     font-weight: bold;
-    border: 3px solid #ff6961;
+    border: 3px solid #fff;
     border-radius: 0.3em;
     position: absolute;
     left: 0.5em;
@@ -80,7 +91,7 @@ header div.contenedor
 #menu:hover
 {
     color: white;
-    background-color: #ff6961;
+    background-color:  #5271FF;
 }
 
 #menu-cerrar
@@ -109,13 +120,13 @@ header div.contenedor nav
     top: 0;
     left: 0;
     height: 100%;
-    width: 40%;
-    background-color: #8466f4;
+    width: 35%;
+    background-color: #5271FF;
     padding-top: 0.5em;
     padding-right: 1.5em;
-    opacity: 0.8;
+    opacity: .8;
     color: white;
-    font-size: 1.5em;    
+    font-size: 1.5em;
 }
 
 header div.contenedor nav a
@@ -165,7 +176,9 @@ ul li a
     color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 ul li ul.dropdown li
@@ -198,35 +211,35 @@ h1
    text-align: center;
 }
 
-#portada
+section #portada
 {
-    text-align: center;    
+    text-align: center;
+    margin: 20px 20px;
+    width: 100%;           
 }
 
-#planportada
-{
-    margin-top: 30px;
-    margin-inline: 40px;
-    width: 400px;    
+
+section #item
+{    
+    margin-inline: 10px;
+    margin-block: 10px;    
+    width: 45%;    
     border-style:groove;
     border: 1px solid white; 
-    border-radius: 15px;
-    place-content: space-between;
-    align-items: center;
-    justify-content: center;            
+    border-radius: 15px; 
 }
 
-#planportada:hover{
+section #item:hover{
     transform:scale(1.1);
 }
 
 #contenedor
-{
+{    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-around;
+    align-content: space-around;    
 }
 
 .card
@@ -264,3 +277,118 @@ h1
     cursor: pointer;
     font-size: 35px;
 }
+
+/* Formulario */
+.formulario
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form
+{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px #5271FF;
+}
+
+.input-group
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form h2
+{
+    color: #5271FF;
+    font-size: 35px;
+}
+
+form label
+{
+    color: #5271FF;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+form input, textarea
+{
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    background-color: #EDFFF0;
+    border: 2px solid #5271FF;
+    color: #5271FF;
+    outline: none;
+}
+
+form input::placeholder, textarea::placeholder
+{
+    color: #5271FF;
+    opacity: .7;
+}
+
+form .form-txt
+{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+form .form-txt a
+{
+    color: #5271FF;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+form .btn
+{
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-radius: 25px;
+    background-color: #5271FF;
+    box-shadow: 0 0 20px #5271FF;
+    cursor: pointer;
+}
+
+/*form .btn:hover
+{
+    background-color: white;
+    color: #5271FF;    
+}*/
+
+
+/* Footer */
+/* footer
+{    
+    background-color: #5271FF;
+    padding: 1%;
+    text-align: center; 
+}
+
+.logofoot img
+{
+    width: 30px;
+    display: inline;
+    margin-inline: 10px;    
+    cursor: pointer;   
+}
+
+.logofoot .parrafo
+{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+} */
