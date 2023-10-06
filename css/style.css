@@ -45,13 +45,7 @@ menu, #menu-check
 
 /* Navegador para Celulares */
 @media screen and (max-width: 550px)
-{
-.contenedor #item
-{
-    width: 85%;
-    flex-direction: column; 
-}
-    
+{    
 header div.contenedor 
 {
     display: flex;
@@ -120,7 +114,7 @@ header div.contenedor
     display: block;
 }
 
-header div.content nav
+header div.contenedor nav
 {
     position: absolute;
     top: 0;
@@ -135,13 +129,13 @@ header div.content nav
     font-size: 1.5em;
 }
 
-header div.content nav a
+header div.contenedor nav a
 {
     color: white;
     background-color: none;    
 }
 
-header div.content nav a
+header div.contenedor nav a
 {
     display: block;
     text-align: left;
@@ -217,7 +211,7 @@ h1
    text-align: center;
 }
 
-main .contenedor #portada
+section #portada
 {
     text-align: center;
     margin: 20px 20px;
@@ -225,7 +219,7 @@ main .contenedor #portada
 }
 
 
-main .contenedor #item
+section #item
 {    
     margin-inline: 10px;
     margin-block: 10px;    
@@ -235,16 +229,17 @@ main .contenedor #item
     border-radius: 15px; 
 }
 
-main .contenedor #item:hover{
+section #item:hover{
     transform:scale(1.1);
 }
 
-main #contenedor
-{
-    width: 100%;
+#contenedor
+{    
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;    
 }
 
 .card
